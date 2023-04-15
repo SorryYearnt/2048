@@ -1,0 +1,20 @@
+{
+	"short_name": "2048",
+	"name": "2048",
+	"icons": [
+		{
+			"src": "Karyl.ico",
+			"sizes": "256x256 128x128 64x64 48x48 40x40 32x32 24x24 20x20 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "Karyl.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#5d6d7e",
+	"background_color": "#f0f3f4"
+}

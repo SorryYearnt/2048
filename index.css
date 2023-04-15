@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+  font-size: 50px;
+  cursor: url(./cursor.png), auto;
+  user-select: none;
+  touch-action: none;
+}
+
+a, button {
+  cursor: url(./cursor.png), auto;
+}
+
+body {
+  background-color: #f0f3f4;
+}
+
+.Propaganda {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 1ex;
+  font-size: 12px;
+  color: #777;
+  text-align: right;
+}
+.Propaganda h6 {
+  margin-bottom: 4px;
+  font-size: inherit;
+  font-weight: normal;
+}
+#WaterMark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./watermark.png), url(./watermark.png), url(./watermark.png), url(./watermark.png), url(./watermark.png), url(./watermark.png), url(./watermark.png), url(./watermark.png);
+  background-size: 336px;
+  background-position: 0 0, 126px -42px, 84px 84px, 42px -126px, -42px 126px, -126px 42px, -84px -84px, 168px 168px;
+  background-attachment: fixed;
+  pointer-events: none;
+}
+
+#Gamer {
+  position: relative;
+  z-index: 1;
+  margin: 5vh auto 10px;
+  width: 10rem;
+  height: 13.5rem;
+  background-color: #cacfd2;
+  border-radius: 0.2rem;
+}
+#Title {
+  position: relative;
+  padding-top: 0.5rem;
+  height: 3rem;
+}
+@font-face {
+  font-family: "Jokerman";
+  src: url(./JOKERMAN.TTF);
+}
+#Title h1 {
+  width: 6rem;
+  height: 2rem;
+  color: #1c2833;
+  font: normal bold 1.44rem/2rem "Jokerman";
+  text-align: center;
+}
+#Title h6 {
+  padding: 0 0.7rem;
+  height: 0.6rem;
+  font: normal normal 0.36rem/0.6rem "\5B8B\4F53";
+}
+#Title button {
+  position: absolute;
+  right: 0.7rem;
+  top: 1rem;
+  width: 2.5rem;
+  height: 1rem;
+  background-color: #99a3a4;
+  border-style: none;
+  border-radius: 0.08rem;
+  color: #f0f3f4;
+  font: normal normal 0.36rem/1rem "\65B9\6B63\7C97\9ED1\5B8B\7B80\4F53";
+}
+#Title button:hover {
+  background-color: #7f8c8d;
+}
+#Title button:active {
+  background-color: #707b7c;
+  transition: 0.1s;
+}
+/* 本代码由SorryYearnt编写，转载请注明出处。This code is written by SorryYearnt. Please indicate the source for reprinting. このコードはSorryYearntによって書かれており、転載は出典を明記してください。 */
+#Game {
+  position: relative;
+  padding: 0.7rem;
+  height: 8.6rem;
+  background-color: #5d6d7e;
+  border-radius: 0.2rem;
+  outline: none;
+}
+#Game::after {
+  content: "SorryYearnt";
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0;
+  font: xx-small "Times New Roma";
+  color: #596878;
+}
+#Background {
+  width: 8.6rem;
+  height: 8.6rem;
+}
+.BackgroundSquareColumn {
+  float: left;
+}
+.BackgroundSquareColumn ~ .BackgroundSquareColumn {
+  margin-left: 0.2rem;
+}
+.BackgroundSquareColumn .Square ~ .Square {
+  margin-top: 0.2rem;
+}
+.Square {
+  width: 2rem;
+  height: 2rem;
+  background-color: #566573;
+  border-radius: 0.1rem;
+}
+
+@font-face {
+  font-family: "Onyx";
+  src: url(./ONYX.TTF);
+}
+#Numbers {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.7rem;
+  width: 8.6rem;
+  height: 8.6rem;
+  color: #283747;
+  font: 1.44rem/2rem "Onyx";
+  text-align: center;
+}
+.Number {
+  position: absolute;
+  animation: Compose 0.05s linear 2 alternate;
+}
+@keyframes Compose {
+  to {
+    transform: scale(1.2);
+  }
+}
+.Number2 {
+  left: 0px;
+  top: 0px;
+  background-color: #aab7b8;
+  animation: Generate 0.1s linear;
+}
+.Number4 {
+  left: 2.2rem;
+  top: 0px;
+  background-color: #5dade2;
+}
+.Generate {
+  animation: Generate 0.1s linear;
+}
+@keyframes Generate {
+  from {
+    transform: scale(0.5);
+  }
+}
+.Number8 {
+  left: 4.4rem;
+  top: 0px;
+  background-color: #48c9b0;
+}
+.Number16 {
+  left: 6.6rem;
+  top: 0px;
+  background-color: #58d68d;
+}
+.Number32 {
+  left: 0px;
+  top: 2.2rem;
+  background-color: #52be80;
+}
+.Number64 {
+  left: 2.2rem;
+  top: 2.2rem;
+  background-color: #f4d03f;
+}
+.Number128 {
+  left: 4.4rem;
+  top: 2.2rem;
+  background-color: #f5b041;
+}
+.Number256 {
+  left: 6.6rem;
+  top: 2.2rem;
+  background-color: #dc7633;
+  color: #fcf3cf;
+}
+.Number512 {
+  left: 0px;
+  top: 4.4rem;
+  background-color: #ec7063;
+  color: #f9e79f;
+}
+.Number1024 {
+  left: 2.2rem;
+  top: 4.4rem;
+  background-color: #cd6155;
+  color: #f7dc6f;
+}
+.Number2048 {
+  left: 4.4rem;
+  top: 4.4rem;
+  background-color: #a569bd;
+  color: #f4d03f;
+}
+#Store {
+  display: none;
+}
+#ChallengeResult {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 0.7rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#ChallengeResult > * {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7rem;
+  height: 7rem;
+  transform: translate(-50%, -50%);
+  animation: ChallengeResult 0.5s;
+}
+@keyframes ChallengeResult {
+  from {
+    transform: translate(-50%, -50%) scale(20);
+  }
+}
+.Lose {
+  fill: #154360;
+}

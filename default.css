@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+em,i{
+	font-style:normal;
+}
+li{
+	list-style: none;
+}
+img{
+	border:0;
+	vertical-align:middle;
+}
+/* 本代码由SorryYearnt编写，转载请注明出处。This code is written by SorryYearnt. Please indicate the source for reprinting. このコードはSorryYearntによって書かれており、転載は出典を明記してください。 */
+button{
+	cursor:pointer;
+}
+a{
+	color:#666;
+	text-decoration: none;
+}
+a:hover{
+	color:#c81623;
+}
+button,input{
+	font-family: "\9ED1\4F53","\5B8B\4F53","\5FAE\8F6F\96C5\9ED1";
+}
+body{
+	background-color: #fff;
+	color:#666;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	user-select: none;
+	touch-action: none;
+  }
+*{
+	-webkit-tap-highlight-color: transparent;
+}
